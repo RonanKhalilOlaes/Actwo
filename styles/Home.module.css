@@ -294,3 +294,32 @@ input#first  {
     transform: rotate(0deg);
   }
 }
+
+.inputArea {
+  background-color:rgb(173, 214, 255);
+  border: 1px solid white;
+  border-bottom: 1px solid white;
+  border-style: ridge;
+  
+  padding: 15px;
+  display: inline-block;
+  width: 40%;
+
+}
+
+.mainHeader{
+  font-size: 4em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subHeader {
+  font-size: 2em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonMain {
+  border: none;
+  border-radius: 5px;
+  padding: 2em 2em;
+  width: 30%;
+}

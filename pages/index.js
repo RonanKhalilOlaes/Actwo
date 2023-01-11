@@ -44,22 +44,24 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <h1>Welcome</h1>
+        <h1 className={styles.mainHeader}>Welcome</h1>
         
-        <label className="first">First name:</label>
+        <label className={styles.subHeader}>First name:</label>
         <input 
          type="text"
          id="first"
+         className={styles.inputArea}
          name="first"
          pattern="[A-Z]{1}[a-z]{2,10}"
          title="The first letter should be capitalized"
          onChange={(e => setFormData({...formData, firstName: e.target.value}))}
         />
 
-        <label className="user">Username:</label>
+        <label className={styles.subHeader}>Username:</label>
         <input 
         type="text"
          id="first"
+         className={styles.inputArea}
          name="first"
          title="Type your username"
          minLength="5"
@@ -67,7 +69,7 @@ export default function Home() {
          onChange={(e => setFormData({...formData, username: e.target.value}))}
         />
 
-        <button type="submit" onClick={()=> CheckLogin()}>Submit</button>
+        <button className = {styles.buttonMain} type="submit" onClick={()=> CheckLogin()}>Submit</button>
 
       </main>
     </>
